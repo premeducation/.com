@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prem Education | Every Child Deserves to Learn</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --accent: #C08C33; --dark: #1A130E; --cream: #FDFBF7; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--cream); color: #2D241E; scroll-behavior: smooth; }
+        h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
+        
+        /* Input Visibility Fix */
+        .input-field { 
+            border-bottom: 1px solid #e5e7eb; 
+            width: 100%; 
+            padding: 12px 0; 
+            outline: none; 
+            color: #1f2937 !important; /* Gehra rang taaki dikhai de */
+            background: transparent;
+        }
+        .input-field:focus { border-color: var(--accent); }
+        .amt-btn { border: 1px solid #e5e7eb; transition: all 0.2s; background: white; color: #1f2937; }
+        .amt-btn.selected { background-color: var(--accent); color: white; border-color: var(--accent); }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+
+    <nav class="flex justify-between items-center px-6 md:px-12 py-6 max-w-7xl mx-auto">
+        <div class="text-2xl font-bold">Prem <span class="text-accent italic">Education</span></div>
+        <div class="hidden md:flex space-x-10 text-sm font-medium opacity-70">
+            <a href="#mission" class="hover:text-accent">Our Mission</a>
+            <a href="#programs" class="hover:text-accent">Programs</a>
+            <a href="#impact" class="hover:text-accent">Impact</a>
+            <a href="#stories" class="hover:text-accent">Stories</a>
+        </div>
+        <a href="#donate" class="bg-[#C08C33] text-white px-7 py-2.5 rounded-full font-semibold text-sm">Donate Now</a>
+    </nav>
+
+    <section class="flex flex-col md:flex-row min-h-[80vh]">
+        <div class="md:w-1/2 flex flex-col justify-center px-6 md:px-20 py-16">
+            <div class="inline-block bg-[#F5E6DA] text-[#8B572A] text-[10px] tracking-widest font-bold px-4 py-1.5 rounded-full mb-8 uppercase border border-[#E9D5C3]">
+                • Non-Profit • Est. 2016 • India
+            </div>
+            <h1 class="text-5xl md:text-7xl mb-8 leading-tight">Every child deserves <span class="text-accent italic">a chance to</span> learn & grow</h1>
+            <p class="text-lg opacity-70 max-w-md leading-relaxed">Prem Education is a student-driven organization bringing quality education and mentorship to underserved children.</p>
+            <div class="mt-10 flex space-x-8">
+                <a href="#donate" class="bg-black text-white px-8 py-4 rounded-xl font-semibold shadow-lg">Support a Child</a>
+                <a href="#mission" class="font-semibold underline underline-offset-8 decoration-accent">Our story →</a>
+            </div>
+        </div>
+        <div class="md:w-1/2 bg-[#3D2B1F] relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1470&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-60">
+        </div>
+    </section>
+
+    <section id="impact" class="py-20 bg-white border-y border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl mb-16 serif italic">Small team, <span class="text-accent">real impact</span></h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="p-8 border-r border-gray-100 last:border-0 text-center">
+                    <h3 class="text-5xl font-bold mb-2">200<span class="text-accent">+</span></h3>
+                    <p class="text-xs opacity-50 uppercase font-bold">Students Reached</p>
+                </div>
+                <div class="p-8 border-r border-gray-100 last:border-0 text-center">
+                    <h3 class="text-5xl font-bold mb-2">3</h3>
+                    <p class="text-xs opacity-50 uppercase font-bold">Programs</p>
+                </div>
+                <div class="p-8 border-r border-gray-100 last:border-0 text-center">
+                    <h3 class="text-5xl font-bold mb-2">₹0</h3>
+                    <p class="text-xs opacity-50 uppercase font-bold">Admin Overhead</p>
+                </div>
+                <div class="p-8 text-center">
+                    <h3 class="text-5xl font-bold mb-2">87%</h3>
+                    <p class="text-xs opacity-50 uppercase font-bold">Stay-in-school rate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mission" class="bg-[#1A130E] text-white py-28 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+            <div>
+                <h2 class="text-5xl md:text-6xl mb-8 leading-tight italic">Why <span class="text-accent">Education</span> matters</h2>
+                <p class="opacity-60 text-lg mb-10 italic font-serif">"Education is the most powerful weapon which you can use to change the world." — Nelson Mandela</p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-white/5 p-6 rounded-2xl border border-white/10"><p class="font-bold text-accent">Access for all</p><p class="text-xs opacity-50">Free tuition and school kits.</p></div>
+                    <div class="bg-white/5 p-6 rounded-2xl border border-white/10"><p class="font-bold text-accent">Student-led</p><p class="text-xs opacity-50">By students, for students.</p></div>
+                </div>
+            </div>
+            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1470&auto=format&fit=crop" class="rounded-[40px] grayscale opacity-80">
+        </div>
+    </section>
+
+    <section id="programs" class="py-24 px-6 bg-[#F9F7F2]">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-5xl serif italic mb-16 text-center">Programs built with <span class="text-accent">love</span></h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm">
+                    <div class="text-3xl mb-4">📚</div>
+                    <h4 class="text-xl font-bold mb-2">Free Tutoring</h4>
+                    <p class="text-sm opacity-60">Evening and weekend classes for low-income families.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm">
+                    <div class="text-3xl mb-4">🎒</div>
+                    <h4 class="text-xl font-bold mb-2">School Kit Drive</h4>
+                    <p class="text-sm opacity-60">Distributing bags and uniforms every academic year.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm">
+                    <div class="text-3xl mb-4">💻</div>
+                    <h4 class="text-xl font-bold mb-2">Digital Literacy</h4>
+                    <p class="text-sm opacity-60">Basic computing and online safety for children.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stories" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-center text-5xl serif italic mb-16">Lives <span class="text-accent">transformed</span></h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="bg-white p-10 rounded-[30px] border border-gray-100 flex gap-6 items-center">
+                    <div class="text-4xl text-accent opacity-20 serif italic">“</div>
+                    <p class="italic opacity-80">Prem Education gave me books when my family couldn't afford them. — Rahul, Grade 10</p>
+                </div>
+                <div class="bg-white p-10 rounded-[30px] border border-gray-100 flex gap-6 items-center">
+                    <div class="text-4xl text-accent opacity-20 serif italic">“</div>
+                    <p class="italic opacity-80">Learning computer basics changed how I look at my future. — Sneha, Grade 8</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="donate" class="bg-[#1A130E] text-white py-28 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20">
+            <div>
+                <h2 class="text-5xl md:text-6xl mb-8 leading-tight italic">Your gift <span class="text-accent">changes</span> a life</h2>
+                <p class="opacity-60 text-lg mb-12">100% donation-funded. Transparent and secure.</p>
+                <div class="bg-white/5 p-8 rounded-2xl border border-white/10">
+                    <p class="text-accent font-bold mb-2 italic uppercase text-xs tracking-widest">Nurture</p>
+                    <p class="text-2xl font-bold">₹1,000</p>
+                    <p class="text-sm opacity-50">Covers a full school kit for one student.</p>
+                </div>
+            </div>
+
+            <div class="bg-white text-dark p-10 md:p-14 rounded-[40px]">
+                <div id="form-ui">
+                    <h3 class="text-2xl font-bold mb-8 text-[#1A130E]">Make a donation</h3>
+                    <form id="payForm" class="space-y-8">
+                        <div class="grid grid-cols-3 gap-3">
+                            <button type="button" onclick="setAmt(500, this)" class="amt-btn py-3 rounded-xl font-bold text-xs">₹500</button>
+                            <button type="button" onclick="setAmt(1000, this)" class="amt-btn selected py-3 rounded-xl font-bold text-xs">₹1,000</button>
+                            <button type="button" onclick="setAmt(2500, this)" class="amt-btn py-3 rounded-xl font-bold text-xs">₹2,500</button>
+                        </div>
+                        <input type="number" id="amt" value="1000" class="input-field text-xl font-bold" required>
+                        <input type="text" id="donorName" class="input-field" placeholder="Full Name" required>
+                        <input type="email" class="input-field" placeholder="Email Address" required>
+                        <button type="submit" class="w-full bg-[#C08C33] text-white py-5 rounded-2xl font-bold text-lg hover:scale-[1.02] transition">Donate Now</button>
+                    </form>
+                </div>
+                <div id="success-ui" class="hidden text-center py-10">
+                    <h3 class="text-3xl font-bold mb-4 text-[#1A130E]">Thank you, <span id="uName"></span>!</h3>
+                    <p class="opacity-60 text-[#1A130E]">Your support is powering our mission.</p>
+                    <button onclick="location.reload()" class="mt-8 text-accent font-bold underline">Donate Again</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#1A130E] text-white/60 py-20 px-6 md:px-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16">
+            <div class="col-span-2">
+                <div class="text-2xl font-bold text-white mb-6">Prem <span class="text-accent italic">Education</span></div>
+                <p class="max-w-xs text-sm leading-loose">A student-led non-profit working to bring quality education and supplies to children across India.</p>
+                <a href="#donate" class="inline-block mt-8 bg-[#C08C33] text-white px-6 py-3 rounded-full text-xs font-bold uppercase tracking-widest">📍 Donate Now</a>
+            </div>
+            <div>
+                <h4 class="text-white text-xs font-bold uppercase tracking-widest mb-8">Programs</h4>
+                <ul class="text-sm space-y-4">
+                    <li><a href="#" class="hover:text-accent">Free Tutoring</a></li>
+                    <li><a href="#" class="hover:text-accent">School Kit Drive</a></li>
+                    <li><a href="#" class="hover:text-accent">Digital Literacy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white text-xs font-bold uppercase tracking-widest mb-8">Connect</h4>
+                <ul class="text-sm space-y-4">
+                    <li><a href="#" class="hover:text-accent">Instagram</a></li>
+                    <li><a href="#" class="hover:text-accent">LinkedIn</a></li>
+                    <li><a href="#" class="hover:text-accent">Email Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-widest font-medium">
+            <p>© 2026 Prem Education. All rights reserved.</p>
+            <p>Made with ♥ by students, for students.</p>
+        </div>
+    </footer>
+
+    <script>
+        function setAmt(val, btn) {
+            document.getElementById('amt').value = val;
+            document.querySelectorAll('.amt-btn').forEach(b => b.classList.remove('selected'));
+            btn.classList.add('selected');
+        }
+        document.getElementById('payForm').onsubmit = function(e) {
+            e.preventDefault();
+            const name = document.getElementById('donorName').value;
+            document.getElementById('form-ui').classList.add('hidden');
+            document.getElementById('success-ui').classList.remove('hidden');
+            document.getElementById('uName').innerText = name;
+        }
+    </script>
+</body>
+</html>
